@@ -2640,7 +2640,7 @@ window.FlexDashboardComponents.push({
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="inputs" class="section level2 sidebar">
+<div id="inputs" class="section level2 sidebar" data-width="200">
 <h2>Inputs</h2>
 <div id="sidebar_hD" height="100%">
 
@@ -2652,7 +2652,7 @@ window.FlexDashboardComponents.push({
     var pymParent = new pym.Parent("sidebar_hD", "sidebar_hDisplay.html", {});
 </script>
 </div>
-<div id="column" class="section level2" data-width="650">
+<div id="column" class="section level2" data-width="550">
 <h2>Column</h2>
 <div id="圖片展示" class="section level3">
 <h3>圖片展示</h3>
@@ -2670,27 +2670,98 @@ window.FlexDashboardComponents.push({
 </object>
 </div>
 </div>
-<div id="column-1" class="section level2" data-width="350">
+<div id="column-1" class="section level2" data-width="250">
 <h2>Column</h2>
 <div id="圖片說明" class="section level3">
 <h3>圖片說明</h3>
-<p>公投案第10案：你是否<span>同意</span>民法婚姻規定<span>應限定在一男一女</span>的結合？ <!-- 
-HTML Block & Inline (w3school): 
-  eg. <div> -> block 
-      <span> -> inline
---></p>
-<ol>
-<li>
-六都的同意比例皆超過5成，顯示台灣社會對於性別的觀念仍趨保守。
-</li>
-<li>
-可看出雙北對於性別的觀念較其他四都開放，臺北市的同意比例甚至掉到7成以下。
-</li>
-<li>
-可看出愈往北部，性別觀念愈趨成熟。
-</li>
-</ol>
-<p>資料來源：政府資料開放平台</p>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div id="exp1" style="display: block">
+  <p>
+    公投案第10案：你是否<span>同意</span>民法婚姻規定<span>應限定在一男一女</span>的結合？
+  </p>
+  <!-- 
+  HTML Block & Inline (w3school): 
+    eg. <div> -> block 
+        <span> -> inline
+  -->
+  <ol>
+    <li>六都的同意比例皆超過5成，顯示台灣社會對於性別的觀念仍趨保守。</li>
+    <li>可看出雙北對於性別的觀念較其他四都開放，臺北市的同意比例甚至掉到7成以下。</li>
+    <li>可看出愈往北部，性別觀念愈趨成熟。</li>
+  </ol>
+  <p>資料來源：政府資料開放平台</p>
+</div>
+
+
+
+<div id="exp2" style="display: none">
+  <p>「吸菸率」定義：18歲以上，從以前到現在吸菸累計超過100支，且最近30天內曾經使用菸品者之比率。</p>
+  <p>
+    計算公式：
+    <div>(有效完訪吸菸人數／有效完訪樣本人數)*100%</div>
+  </p>
+  <p>
+    由圖可看出：
+    <ol>
+      <li>男、女性吸菸率皆有逐年遞減的趨勢</li>
+      <li>女性吸菸率大幅低於男性</li>
+    </ol>
+  </p>
+</div>
+
+
+
+<div id="exp3" style="display: none">
+  <p>
+    該圖呈現2017年亞洲、歐洲、北美、大洋洲各國之人均GNP，其中
+  </p>
+  <ol>
+    <li>歐洲、亞洲國家人均GNP差異很大</li>
+    <li>北美地區人均GNP偏高</li>
+  </ol>
+</div>
+
+
+
+<div id="exp4" style="display: none">
+  <p>
+    此圖為將我歷年成績單上的資訊轉化成圖示，其中
+  </p>
+  <ol>
+    <li>大一下的柱子有陰影處是因為被當了2學分</li>
+    <li>大三開始大量減少參加社團活動，重心移往課業，成績表現因而有所提升</li>
+    <li>大四上參加學校的短期交換生活動，因此學分修得較少</li>
+    <li>碩士班課程難度較大學高，因而用顏色做區分</li>
+  </ol>
+</div>
+
+
+
+<div id="exp5" style="display: none">
+  <p>
+    Resume Link: <https://www.cakeresume.com/lan-horace>
+  </p>
+  <p>
+    以時間軸的方式簡略的呈現出 Horace Lan 的個人經歷。
+    在此可看出她畢業於北教大的數位科技設計學系，以及她曾經的工作職位和年資，
+    有助於雇主快速的了解 Horace Lan 是否為他想找的員工。
+  </p>
+</div>
+
+
+
+<div id="exp6" style="display: none">
+  <p>
+    左圖為2019/11/21版的Politics This Week，其中：
+  </p>
+  <ul>
+    <li>綠色區塊代表Politics This Week涵蓋的國家</li>
+    <li>一個紅色旗子代表一篇文章</li>
+  </ul>
+</div>
+
 </div>
 <div id="設計理念" class="section level3">
 <h3>設計理念</h3>
@@ -2742,6 +2813,7 @@ $(document).ready(function () {
 
 <script>
   window.onload=function(){
+    
     var sb=document.getElementsByTagName('iframe')[0].contentDocument
     var dis1=sb.getElementById('dis1')
     var dis2=sb.getElementById('dis2')
@@ -2757,14 +2829,27 @@ $(document).ready(function () {
     var hw5=document.getElementById('hw5')
     var hw6=document.getElementById('hw6')
     
+    var exp1=document.getElementById('exp1')
+    var exp2=document.getElementById('exp2')
+    var exp3=document.getElementById('exp3')
+    var exp4=document.getElementById('exp4')
+    var exp5=document.getElementById('exp5')
+    var exp6=document.getElementById('exp6')
+    
     function show1(){
         hw1.setAttribute("style", "display: block"); 
         hw2.setAttribute("style", "display: none"); 
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
-
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: block"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show2(){
@@ -2773,7 +2858,14 @@ $(document).ready(function () {
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: block"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show3(){
@@ -2782,7 +2874,14 @@ $(document).ready(function () {
         hw3.setAttribute("style", "display: block"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: block"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show4(){
@@ -2791,7 +2890,14 @@ $(document).ready(function () {
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: block"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: block"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show5(){
@@ -2800,7 +2906,14 @@ $(document).ready(function () {
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: block"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: block"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show6(){
@@ -2809,7 +2922,14 @@ $(document).ready(function () {
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: block")
+        hw6.setAttribute("style", "display: block"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: block")
     }
     
     dis1.addEventListener("click", show1)

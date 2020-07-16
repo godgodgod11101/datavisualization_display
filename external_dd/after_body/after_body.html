@@ -9,6 +9,7 @@
 
 <script>
   window.onload=function(){
+    
     var sb=document.getElementsByTagName('iframe')[0].contentDocument
     var dis1=sb.getElementById('dis1')
     var dis2=sb.getElementById('dis2')
@@ -24,14 +25,27 @@
     var hw5=document.getElementById('hw5')
     var hw6=document.getElementById('hw6')
     
+    var exp1=document.getElementById('exp1')
+    var exp2=document.getElementById('exp2')
+    var exp3=document.getElementById('exp3')
+    var exp4=document.getElementById('exp4')
+    var exp5=document.getElementById('exp5')
+    var exp6=document.getElementById('exp6')
+    
     function show1(){
         hw1.setAttribute("style", "display: block"); 
         hw2.setAttribute("style", "display: none"); 
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
-
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: block"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show2(){
@@ -40,7 +54,14 @@
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: block"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show3(){
@@ -49,7 +70,14 @@
         hw3.setAttribute("style", "display: block"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: block"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show4(){
@@ -58,7 +86,14 @@
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: block"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: block"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show5(){
@@ -67,7 +102,14 @@
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: block"); 
-        hw6.setAttribute("style", "display: none")
+        hw6.setAttribute("style", "display: none"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: block"); 
+        exp6.setAttribute("style", "display: none")
     }
     
     function show6(){
@@ -76,7 +118,14 @@
         hw3.setAttribute("style", "display: none"); 
         hw4.setAttribute("style", "display: none"); 
         hw5.setAttribute("style", "display: none"); 
-        hw6.setAttribute("style", "display: block")
+        hw6.setAttribute("style", "display: block"); 
+        
+        exp1.setAttribute("style", "display: none"); 
+        exp2.setAttribute("style", "display: none"); 
+        exp3.setAttribute("style", "display: none"); 
+        exp4.setAttribute("style", "display: none"); 
+        exp5.setAttribute("style", "display: none"); 
+        exp6.setAttribute("style", "display: block")
     }
     
     dis1.addEventListener("click", show1)
