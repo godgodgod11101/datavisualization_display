@@ -1,0 +1,49 @@
+---
+title: "Untitled"
+author: "jacky wang"
+date: "2020/7/15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(knitr)
+
+opts_chunk$set(echo = TRUE, message = F, warning = T, eval=T)
+
+# windows檔名不要有"-"號
+
+```
+
+```{r package, include=FALSE}
+
+library(readr)    # 資料讀入
+library(lubridate)    # 時間
+library(stringr)    # 字串
+library(glue)    # 字串拼接
+library(purrr)    # map()：重複套用函數
+library(magrittr)    # pipe
+library(codetools)    # findGlobals()：查詢函數需要哪些定義好的物件
+
+source(file = "./R_function_dd/to_frameableHTML_byMartin.R", encoding = "UTF-8")
+
+# detach("package:stringr")    # 「收回」套件
+
+```
+
+
+
+
+
+# test
+
+```{r}
+
+to_frameableHTML("sidebar_hDisplay.html")
+
+```
+
+
+
+
+

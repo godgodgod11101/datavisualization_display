@@ -1,0 +1,89 @@
+<!--以HTML語法寫下要放在body結尾的內容，不可使用任何code chunks-->
+
+
+
+<!--bootstrap 4-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+  window.onload=function(){
+    var sb=document.getElementsByTagName('iframe')[0].contentDocument
+    var dis1=sb.getElementById('dis1')
+    var dis2=sb.getElementById('dis2')
+    var dis3=sb.getElementById('dis3')
+    var dis4=sb.getElementById('dis4')
+    var dis5=sb.getElementById('dis5')
+    var dis6=sb.getElementById('dis6')
+    
+    var hw1=document.getElementById('hw1')
+    var hw2=document.getElementById('hw2')
+    var hw3=document.getElementById('hw3')
+    var hw4=document.getElementById('hw4')
+    var hw5=document.getElementById('hw5')
+    var hw6=document.getElementById('hw6')
+    
+    function show1(){
+        hw1.setAttribute("style", "display: block"); 
+        hw2.setAttribute("style", "display: none"); 
+        hw3.setAttribute("style", "display: none"); 
+        hw4.setAttribute("style", "display: none"); 
+        hw5.setAttribute("style", "display: none"); 
+        hw6.setAttribute("style", "display: none")
+
+    }
+    
+    function show2(){
+        hw1.setAttribute("style", "display: none"); 
+        hw2.setAttribute("style", "display: block"); 
+        hw3.setAttribute("style", "display: none"); 
+        hw4.setAttribute("style", "display: none"); 
+        hw5.setAttribute("style", "display: none"); 
+        hw6.setAttribute("style", "display: none")
+    }
+    
+    function show3(){
+        hw1.setAttribute("style", "display: none"); 
+        hw2.setAttribute("style", "display: none"); 
+        hw3.setAttribute("style", "display: block"); 
+        hw4.setAttribute("style", "display: none"); 
+        hw5.setAttribute("style", "display: none"); 
+        hw6.setAttribute("style", "display: none")
+    }
+    
+    function show4(){
+        hw1.setAttribute("style", "display: none"); 
+        hw2.setAttribute("style", "display: none"); 
+        hw3.setAttribute("style", "display: none"); 
+        hw4.setAttribute("style", "display: block"); 
+        hw5.setAttribute("style", "display: none"); 
+        hw6.setAttribute("style", "display: none")
+    }
+    
+    function show5(){
+        hw1.setAttribute("style", "display: none"); 
+        hw2.setAttribute("style", "display: none"); 
+        hw3.setAttribute("style", "display: none"); 
+        hw4.setAttribute("style", "display: none"); 
+        hw5.setAttribute("style", "display: block"); 
+        hw6.setAttribute("style", "display: none")
+    }
+    
+    function show6(){
+        hw1.setAttribute("style", "display: none"); 
+        hw2.setAttribute("style", "display: none"); 
+        hw3.setAttribute("style", "display: none"); 
+        hw4.setAttribute("style", "display: none"); 
+        hw5.setAttribute("style", "display: none"); 
+        hw6.setAttribute("style", "display: block")
+    }
+    
+    dis1.addEventListener("click", show1)
+    dis2.addEventListener("click", show2)
+    dis3.addEventListener("click", show3)
+    dis4.addEventListener("click", show4)
+    dis5.addEventListener("click", show5)
+    dis6.addEventListener("click", show6)
+  }
+</script>

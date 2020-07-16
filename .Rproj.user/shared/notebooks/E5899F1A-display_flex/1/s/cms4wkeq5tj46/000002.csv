@@ -1,0 +1,8 @@
+"0","servr::daemon_stop("
+"0","  which=servr::daemon_list()"
+"0",")"
+"0","servr::httd(dir=""."",port=8000,initpath=params$output_filename)"
+"2","To stop the server, run servr::daemon_stop(1) or restart your R session
+"
+"2","Serving the directory D:\Users\User\Documents\GitHub\datavisualization_display at http://127.0.0.1:8000/display_flex.html
+"

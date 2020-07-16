@@ -1,0 +1,20 @@
+"0","to_frameableHTML(""sidebar_hDisplay.html"")
+"
+"1","請在要引入圖形處貼上：
+
+"
+"1"," "
+"1","<div id=""example"" width=""100%"" height=""100%""></div>
+<script type=""text/javascript"" src=""https://pym.nprapps.org/pym.v1.min.js""></script>
+<script>
+    var pymParent = new pym.Parent(""example"", ""sidebar_hDisplay.html"", {});
+</script>
+"
+"1"," "
+"1","
+"
+"1"," "
+"1","請檢查scripts最後一行的路徑。
+"
+"1"," "
+"1","""example""可改成自己要的id"
