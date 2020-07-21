@@ -2828,8 +2828,31 @@ window.FlexDashboardComponents.push({
 </div>
 <div id="設計理念" class="section level3">
 <h3>設計理念</h3>
-<p>
-利用顏色的深淺，來強調六都性別觀念的開放程度，愈深代表性別觀念愈開放。
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<p id="des1" style="display: block">
+  利用顏色深淺來表達六都性別觀念的開放程度，愈深代表性別觀念愈開放。
+</p>
+
+<p id="des2" style="display: none">
+  以線圖表達台灣吸菸率的趨勢，並用不同顏色來區分男女。另外，以「黑板」的概念來設計圖面，有一種在上健康教育課的感覺。
+</p>
+
+<p id="des3" style="display: none">
+  依照世界銀行的分類，呈現區域內各國的人均GNP分佈，並將一些處於極端或是重點國家以深色標示出來。
+</p>
+
+<p id="des4" style="display: none">
+  將學期成績與修課／實得學分一並呈現，可快速地看出學生歷年的學業表現。另外，再以顏色區分不同學位階段的學業表現。
+</p>
+
+<p id="des5" style="display: none">
+  以時間軸的方式呈現個人經歷，並用顏色區分學歷、工讀經驗、工作經驗。
+</p>
+
+<p id="des6" style="display: none">
+  以高彩度的顏色，凸顯本週Politics This Week所報導的國家，並以一個旗子代表一篇文章。放上旗子的目的，是為了做連結。當使用者將滑鼠滑到旗子上時，會跳出該篇文章的標題，而點下去就會連結到該篇文章。另外，將地圖上南極洲的部分拿掉，使圖面呈現較為美觀。
 </p>
 </div>
 </div>
@@ -2899,6 +2922,13 @@ $(document).ready(function () {
     var exp5=document.getElementById('exp5')
     var exp6=document.getElementById('exp6')
     
+    var des1=document.getElementById('des1')
+    var des2=document.getElementById('des2')
+    var des3=document.getElementById('des3')
+    var des4=document.getElementById('des4')
+    var des5=document.getElementById('des5')
+    var des6=document.getElementById('des6')
+    
     function show1(){
         hw1.setAttribute("style", "display: block"); 
         hw2.setAttribute("style", "display: none"); 
@@ -2912,7 +2942,14 @@ $(document).ready(function () {
         exp3.setAttribute("style", "display: none"); 
         exp4.setAttribute("style", "display: none"); 
         exp5.setAttribute("style", "display: none"); 
-        exp6.setAttribute("style", "display: none")
+        exp6.setAttribute("style", "display: none"); 
+        
+        des1.setAttribute("style", "display: block"); 
+        des2.setAttribute("style", "display: none"); 
+        des3.setAttribute("style", "display: none"); 
+        des4.setAttribute("style", "display: none"); 
+        des5.setAttribute("style", "display: none"); 
+        des6.setAttribute("style", "display: none")
     }
     
     function show2(){
@@ -2928,7 +2965,14 @@ $(document).ready(function () {
         exp3.setAttribute("style", "display: none"); 
         exp4.setAttribute("style", "display: none"); 
         exp5.setAttribute("style", "display: none"); 
-        exp6.setAttribute("style", "display: none")
+        exp6.setAttribute("style", "display: none"); 
+        
+        des1.setAttribute("style", "display: none"); 
+        des2.setAttribute("style", "display: block"); 
+        des3.setAttribute("style", "display: none"); 
+        des4.setAttribute("style", "display: none"); 
+        des5.setAttribute("style", "display: none"); 
+        des6.setAttribute("style", "display: none")
     }
     
     function show3(){
@@ -2944,7 +2988,14 @@ $(document).ready(function () {
         exp3.setAttribute("style", "display: block"); 
         exp4.setAttribute("style", "display: none"); 
         exp5.setAttribute("style", "display: none"); 
-        exp6.setAttribute("style", "display: none")
+        exp6.setAttribute("style", "display: none"); 
+        
+        des1.setAttribute("style", "display: none"); 
+        des2.setAttribute("style", "display: none"); 
+        des3.setAttribute("style", "display: block"); 
+        des4.setAttribute("style", "display: none"); 
+        des5.setAttribute("style", "display: none"); 
+        des6.setAttribute("style", "display: none")
     }
     
     function show4(){
@@ -2960,7 +3011,14 @@ $(document).ready(function () {
         exp3.setAttribute("style", "display: none"); 
         exp4.setAttribute("style", "display: block"); 
         exp5.setAttribute("style", "display: none"); 
-        exp6.setAttribute("style", "display: none")
+        exp6.setAttribute("style", "display: none"); 
+        
+        des1.setAttribute("style", "display: none"); 
+        des2.setAttribute("style", "display: none"); 
+        des3.setAttribute("style", "display: none"); 
+        des4.setAttribute("style", "display: block"); 
+        des5.setAttribute("style", "display: none"); 
+        des6.setAttribute("style", "display: none")
     }
     
     function show5(){
@@ -2976,7 +3034,14 @@ $(document).ready(function () {
         exp3.setAttribute("style", "display: none"); 
         exp4.setAttribute("style", "display: none"); 
         exp5.setAttribute("style", "display: block"); 
-        exp6.setAttribute("style", "display: none")
+        exp6.setAttribute("style", "display: none"); 
+        
+        des1.setAttribute("style", "display: none"); 
+        des2.setAttribute("style", "display: none"); 
+        des3.setAttribute("style", "display: none"); 
+        des4.setAttribute("style", "display: none"); 
+        des5.setAttribute("style", "display: block"); 
+        des6.setAttribute("style", "display: none")
     }
     
     function show6(){
@@ -2992,7 +3057,14 @@ $(document).ready(function () {
         exp3.setAttribute("style", "display: none"); 
         exp4.setAttribute("style", "display: none"); 
         exp5.setAttribute("style", "display: none"); 
-        exp6.setAttribute("style", "display: block")
+        exp6.setAttribute("style", "display: block"); 
+        
+        des1.setAttribute("style", "display: none"); 
+        des2.setAttribute("style", "display: none"); 
+        des3.setAttribute("style", "display: none"); 
+        des4.setAttribute("style", "display: none"); 
+        des5.setAttribute("style", "display: none"); 
+        des6.setAttribute("style", "display: block")
     }
     
     dis1.addEventListener("click", show1)
